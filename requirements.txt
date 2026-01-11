@@ -1,15 +1,14 @@
+streamlit==1.30.0
+
 # Core
 numpy==1.26.4
 pandas==2.2.2
 tqdm
 requests
 
-# Camera
-opencv-python==4.9.0.80
-deepface==0.0.93
+# Computer Vision (cloud-safe)
+opencv-python-headless==4.9.0.80
+deepface==0.0.79
 
-# Audio
-sounddevice
-soundfile
-torch==2.1.2
-transformers==4.36.2
+# ML backend (CPU only)
+tensorflow-cpu==2.15.0
