@@ -15,44 +15,68 @@ A real-time emotion-aware system that detects employee emotions using camera, te
 - 🔒 Privacy-first approach with anonymized employee IDs
 
 
-## 🗂 Project Structure
-
+🏗️ Project Structure
 emotion-aware-task-optimizer/
 │
 ├── src/
-│ ├── init.py
-│ ├── final_system.py
-│ ├── logger.py
-│ ├── task_engine.py
-│ ├── text_emotion.py
+│   ├── __init__.py
+│   ├── final_system.py
+│   ├── logger.py
+│   ├── task_engine.py
+│   ├── text_emotion.py
 │
 ├── audio_emotion_live.py
 ├── camera_emotion.py
 ├── emotion_task_loop.py
 ├── team_mood_analytics.py
 ├── utils.py
+│
 ├── requirements.txt
 ├── README.md
-└── .gitignore
+├── .gitignore
 
 
-## ⚙️ Installation
-
-```bash
+⚙️ Installation
+1️⃣ Clone the repository
 git clone https://github.com/Aryaa-2905/emotion-aware-task-optimizer.git
 cd emotion-aware-task-optimizer
+
+2️⃣ Create and activate virtual environment
 python -m venv venv
-venv\Scripts\activate   # Windows
+
+
+Windows
+
+venv\Scripts\activate
+
+
+Linux / macOS
+
+source venv/bin/activate
+
+3️⃣ Install dependencies
 pip install -r requirements.txt
 
-
-How to Run
+▶️ How to Run
 
 Make sure your camera is connected.
 
 python -m src.final_system
 
-🧪 Tech Stack
+
+📸 A webcam window will open and display detected emotions in real time.
+
+🧪 Example Output
+
+Emotion detected: Happy / Neutral / Sad / Angry
+
+Suggested action printed in terminal
+
+Stress alerts triggered after repeated negative emotions
+
+Logs stored for analytics
+
+🛠️ Tech Stack
 
 Python
 
@@ -66,30 +90,34 @@ NumPy
 
 Pandas
 
-📌 Use Cases
+🔐 Data Privacy
 
-Employee well-being monitoring
+Employee identity is anonymized
 
-Emotion-aware productivity optimization
+No facial images are stored
 
-HR analytics & stress management
+Only emotion labels and timestamps are logged
 
-Smart workplace systems
+🚀 Future Enhancements
 
-📊 Output
+Web dashboard for HR
 
-Real-time emotion detection via camera
+Email / Slack alerts
 
-Emotion logs stored for analysis
+Speech emotion integration
 
-Stress alerts displayed in terminal
-
-Team mood insights for managerial review
+Cloud deployment (FastAPI / Docker)
 
 👩‍💻 Author
 
-## 👩‍💻 Author
-
 Arya Gahine
-B.Tech ENTC Student 
+B.Tech ENTC | Data Science & AI
 GitHub: https://github.com/Aryaa-2905
+
+⭐ Acknowledgements
+
+DeepFace library
+
+OpenCV community
+
+TensorFlow team
